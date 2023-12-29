@@ -24,7 +24,14 @@ import Hero from '../components/Hero.astro';
                                                 <span>Message</span>
                                                 <textarea class="mt-1 block w-full" name="message" placeholder="Your message..." required></textarea>
                                               </label>
-
+                                              <label class="block">
+                                                <span>Query type</span>
+                                                <select class="mt-1 block w-full">
+                                                        <option value="New build quote">New build quote</option>
+                                                        <option value="Existing site changes">Existing site changes</option>
+                                                        <option value="Other">Other</option>
+                                                </select>
+                                              </label>
                                               <button class="btn text-center justify-center" type="submit">Send</button>
                                 </form>
                 </div>
