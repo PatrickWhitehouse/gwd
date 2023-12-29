@@ -1,0 +1,90 @@
+---
+import Hero from "../components/Hero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout pageTitle="Pricing">
+        <Hero titleTag="h1" titleText="Pricing" subTitleTag="h2" subTitleText="Pay per page, not per hour" />
+        <div class="my-12">
+                <h3>Are you ready to get Cascaded?</h3>
+                <p>Experience a transparent and cost-effective approach with our pay-per-page model, ensuring you only pay for the tangible results you get, rather than watching the clock tick away on hourly billing – because we believe in delivering value, not just hours.</p>
+                <p>Whether its a complete new build, revamp or just a couple of small changes, we have a package to suit you!</p>
+        </div>
+
+        <div class="my-12 relative">
+                <table class="w-full table-fixed border-separate border-spacing-x-8 text-left">
+                        <colgroup>
+                                <col class="w-1/4">
+                                <col class="w-1/4">
+                                <col class="w-1/4">
+                                <col class="w-1/4">
+                        </colgroup>
+                        <thead>
+                                <tr>
+                                        <td></td>
+                                        <th class="px-8">Package 1</th>
+                                        <th class="px-8">Package 2</th>
+                                        <th class="px-8">Package 3</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                        <td><span class="sr-only">Price</span></td>
+                                        <td class="px-8">£100</td>
+                                        <td class="px-8">£200</td>
+                                        <td class="px-8">£300</td>
+                                </tr>
+                                <tr>
+                                        <th class="py-4" scope="colgroup" colspan="4">
+                                                <div class="text-sm">
+                                                        <span>Services</span>
+                                                </div>
+                                                <div class="absolute w-full mt-4 h-px bg-white/10"></div>
+                                        </th>
+                                </tr>
+                                <tr>
+                                        <th class="py-4 text-white text-sm">
+                                                Hosting
+                                                <div class="absolute w-full mt-4 h-px bg-white/10"></div>
+                                        </th>
+                                        <td class="py-4 text-center">
+                                                <div>
+                                                        ❌
+                                                </div>
+                                        </td>
+                                        <td class="py-4 text-center">
+                                                <div>
+                                                        ❌
+                                                </div>
+                                        </td>
+                                        <td class="py-4 text-center">
+                                                <div>
+                                                        ✅
+                                                </div>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <th class="py-4 text-white text-sm">
+                                                Hosting
+                                                <div class="absolute w-full mt-4 h-px bg-white/10"></div>
+                                        </th>
+                                        <td class="py-4 text-center">
+                                                <div>
+                                                        ❌
+                                                </div>
+                                        </td>
+                                        <td class="py-4 text-center">
+                                                <div>
+                                                        ❌
+                                                </div>
+                                        </td>
+                                        <td class="py-4 text-center">
+                                                <div>
+                                                        ✅
+                                                </div>
+                                        </td>
+                                </tr>
+                        </tbody>
+                </table>
+        </div>
+</BaseLayout>

@@ -28,17 +28,33 @@
 		@apply font-serif;
 	}
 
+	.gradient-text {
+		@apply bg-gradient-to-r from-icterine to-aquamarine bg-clip-text text-transparent;
+	}
+
 	a:not(.btn) {
-		@apply underline underline-offset-[6px] text-aquamarine-300 hover:text-aquamarine-400 transition-colors;
+		@apply gradient-text;
 	}
 
 	p {
 		@apply my-2;
+	}
+
+	th {
+		@apply gradient-text;
 	}
 }
 
 @layer components {
 	.btn {
 		@apply flex px-4 py-1.5 rounded bg-aquamarine-200 no-underline hover:bg-aquamarine-100 transition-colors;
+	}
+
+	.card {
+		@apply p-4;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 100px;
+		border-image: linear-gradient(to right, #f4ff52 0%, #0ff4c6 100%) 1;
 	}
 }

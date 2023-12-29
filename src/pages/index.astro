@@ -6,11 +6,9 @@ import Avatar from '../assets/avatar.jpeg';
 ---
 
 <BaseLayout pageTitle="Home">
-        <Hero titleTag="h1" titleText="Cascade Development" subTitleTag="h2" subTitleText="Code to Conversion">
-                <a class="btn" href="/">Lets Talk</a>
-        </Hero>
-        <div class="flex my-8">
-                <div class="basis-1/2 p-4">
+        <Hero titleTag="h1" titleText="Cascade Development" subTitleTag="h2" subTitleText="Code to Conversion"/>
+        <div class="flex flex-col lg:flex-row my-8">
+                <div class="lg:basis-1/2 p-4 order-2 lg:order-1">
                         <h3>About us</h3>
                         <p>Hi 👋🏻, I'm Patrick, the owner of Cascade Development.</p>
                         <p>I have over 8 years commercial experience in Web Development, specifically the ecommerce space.</p>
@@ -18,19 +16,11 @@ import Avatar from '../assets/avatar.jpeg';
                         <p>I'm a firm believer that every business should have some form of online presence. A website is the best place to start.</p>
                         <p>If you haven't got a website, or you have one that's slow, painful and a general mess, look no further. <a href="/contact">Let's talk!</a></p>
                 </div>
-                <div class="flex justify-end basis-1/2 p-4">
+                <div class="flex justify-center lg:justify-end lg:basis-1/2 p-4 order-1 lg:order-2">
                        <figure>
-                        <Image src={Avatar} alt="Patrick Whitehouse headshot" class="inline-block rounded-lg" format="avif" />
+                        <Image src={Avatar} alt="Patrick Whitehouse headshot" class="inline-block rounded-lg max-w-80" format="avif" />
                         <figcaption class="sr-only">Patrick Whitehouse - Owner of Cascade Development</figcaption>
                        </figure>
                 </div>
         </div>
-        <Hero titleTag="h3" titleText="We utilise the latest tech">
-                <ul>
-                        <li><span>Item</span></li>
-                        <li><span>Item</span></li>
-                        <li><span>Item</span></li>
-                        <li><span>Item</span></li>
-                </ul>
-                </Hero>
 </BaseLayout>

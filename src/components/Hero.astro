@@ -6,9 +6,9 @@ const Tag1 = titleTag;
 const Tag2 = subTitleTag;
 
 ---
-<section class="flex flex-col justify-center items-center text-center my-4">
-        <Tag1>{titleText}</Tag1>
+<section class="flex flex-col justify-center items-center text-center my-12">
+        <Tag1 class="mb-4">{titleText}</Tag1>
         {Tag2 && subTitleText ? 
-        <Tag2>{subTitleText}</Tag2> : '' }
+        <Tag2 class="mb-4">{subTitleText}</Tag2> : '' }
         <slot/>
 </section>
