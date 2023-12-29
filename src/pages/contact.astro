@@ -14,15 +14,15 @@ import Hero from '../components/Hero.astro';
                                 <form class="grid grid-cols-1 gap-6" name="contact" method="POST" netlify>
                                         <label class="block">
                                           <span>Full name</span>
-                                          <input type="text" class="mt-1 block w-full" placeholder="Name" required>
+                                          <input type="text" name="name" class="mt-1 block w-full" placeholder="Name" required>
                                         </label>
                                         <label class="block">
                                                 <span>Email</span>
-                                                <input type="email" class="mt-1 block w-full" placeholder="jon@doe.com" required>
+                                                <input type="email" name="email" class="mt-1 block w-full" placeholder="jon@doe.com" required>
                                               </label>
                                               <label class="block">
                                                 <span>Message</span>
-                                                <textarea class="mt-1 block w-full" placeholder="" required></textarea>
+                                                <textarea class="mt-1 block w-full" name="message" placeholder="" required></textarea>
                                               </label>
 
                                               <button class="btn text-center justify-center" type="submit">Send</button>
