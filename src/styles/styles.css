@@ -43,6 +43,10 @@
 	th {
 		@apply gradient-text;
 	}
+
+	input {
+		@apply text-black;
+	}
 }
 
 @layer components {
